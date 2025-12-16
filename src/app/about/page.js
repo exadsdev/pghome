@@ -48,7 +48,7 @@ export default function AboutPage() {
                                 </p>
                                 <p>
                                     เรามั่นใจ ดูแลลูกค้าทุกท่านเหมือนคนในครอบครัว เพราะพวกเราเรียกตนเองว่าเป็น
-                                    "ช่างบ้าน" ที่มีความชำนาญในการก่อสร้าง พร้อมรับประกันโครงสร้าง 5 ปี
+                                    “ช่างบ้าน” ที่มีความชำนาญในการก่อสร้าง พร้อมรับประกันโครงสร้าง 5 ปี
                                     พร้อมบริการซ่อมแซมหลังการขาย เชื่อถือได้ มั่นใจ ไม่ทิ้งงาน
                                 </p>
                             </div>
@@ -187,11 +187,11 @@ export default function AboutPage() {
                         <h2>พร้อมเริ่มต้นสร้างบ้านในฝัน?</h2>
                         <p>ติดต่อเราวันนี้ รับคำปรึกษาฟรี</p>
                         <div className="cta-buttons">
-                            <a href="tel:092-270-2120" className="cta-btn primary">
-                                โทร 092-270-2120
+                            <a href={`tel:${siteConfig.phone}`} className="cta-btn primary">
+                                โทร {siteConfig.phone}
                             </a>
-                            <a href="https://line.me/ti/p/@pghome" target="_blank" rel="noopener noreferrer" className="cta-btn outline">
-                                แอดไลน์ @pghome
+                            <a href={`https://line.me/ti/p/${siteConfig.lineId}`} target="_blank" rel="noopener noreferrer" className="cta-btn outline">
+                                แอดไลน์ {siteConfig.lineId}
                             </a>
                         </div>
                     </div>

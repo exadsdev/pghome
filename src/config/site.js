@@ -6,9 +6,9 @@ export const siteConfig = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.pghome.co.th',
   companyName: process.env.NEXT_PUBLIC_COMPANY_NAME || 'PG HOME',
   companyFullName: 'บริษัท พีจีโฮม จำกัด',
-  phone: process.env.NEXT_PUBLIC_COMPANY_PHONE || '084-2899794',
-  lineId: process.env.NEXT_PUBLIC_LINE_ID || 'pghome4289',
-  email: 'pghome.con@gmail.com',
+  phone: process.env.NEXT_PUBLIC_COMPANY_PHONE || '092-270-2120',
+  lineId: process.env.NEXT_PUBLIC_LINE_ID || '@pghome',
+  email: 'pghome.ceo@gmail.com',
   address: '518 ต.เจดีย์หัก อ.เมือง จ.ราชบุรี 70000',
   facebookUrl: process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://www.facebook.com/pghome',
 

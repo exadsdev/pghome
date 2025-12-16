@@ -116,11 +116,11 @@ export default function FAQPage() {
                             <h2>ยังมีคำถามอื่นๆ?</h2>
                             <p>ทีมงานพร้อมตอบทุกคำถามของคุณ ติดต่อเราได้เลย</p>
                             <div className="still-questions-buttons">
-                                <a href="tel:092-270-2120" className="btn-contact phone">
-                                    📞 092-270-2120
+                                <a href={`tel:${siteConfig.phone}`} className="btn-contact phone">
+                                    📞 {siteConfig.phone}
                                 </a>
-                                <a href="https://line.me/ti/p/@pghome" target="_blank" rel="noopener noreferrer" className="btn-contact line">
-                                    💬 แอดไลน์ @pghome
+                                <a href={`https://line.me/ti/p/${siteConfig.lineId}`} target="_blank" rel="noopener noreferrer" className="btn-contact line">
+                                    💬 แอดไลน์ {siteConfig.lineId}
                                 </a>
                             </div>
                         </div>

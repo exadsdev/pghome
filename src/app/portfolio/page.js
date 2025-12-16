@@ -71,7 +71,7 @@ export default function PortfolioPage() {
                     <div className="container">
                         <div className="page-hero-content">
                             <h1>ผลงานของเรา</h1>
-                            <p>รวมผลงานบ้านที่เราภาคภูมิใจ กว่า 200 หลังทั่วประเทศ</p>
+                            <p>รวมผลงานบ้านที่เราภาคภูมิใจ กว่า 200 หลังในราชบุรีและพื้นที่ใกล้เคียง</p>
                         </div>
                     </div>
                 </section>
@@ -139,11 +139,11 @@ export default function PortfolioPage() {
                         <h2>อยากมีบ้านสวยเหมือนลูกค้าเรา?</h2>
                         <p>ปรึกษาเราได้ฟรี ทีมงานพร้อมให้คำปรึกษาและออกแบบบ้านในฝันของคุณ</p>
                         <div className="cta-buttons">
-                            <a href="tel:092-270-2120" className="cta-btn primary">
-                                โทร 092-270-2120
+                            <a href={`tel:${siteConfig.phone}`} className="cta-btn primary">
+                                โทร {siteConfig.phone}
                             </a>
-                            <a href="https://line.me/ti/p/@pghome" target="_blank" rel="noopener noreferrer" className="cta-btn outline">
-                                แอดไลน์ @pghome
+                            <a href={`https://line.me/ti/p/${siteConfig.lineId}`} target="_blank" rel="noopener noreferrer" className="cta-btn outline">
+                                แอดไลน์ {siteConfig.lineId}
                             </a>
                         </div>
                     </div>

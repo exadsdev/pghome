@@ -28,28 +28,28 @@ export default function ContactPage() {
                 <section className="contact-cards-section">
                     <div className="container">
                         <div className="contact-cards-grid">
-                            <a href="tel:092-270-2120" className="contact-info-card">
+                            <a href={`tel:${siteConfig.phone}`} className="contact-info-card">
                                 <div className="contact-card-icon">📞</div>
                                 <h3>โทรศัพท์</h3>
-                                <p>092-270-2120</p>
+                                <p>{siteConfig.phone}</p>
                                 <span className="contact-card-action">โทรเลย</span>
                             </a>
-                            <a href="https://line.me/ti/p/@pghome" target="_blank" rel="noopener noreferrer" className="contact-info-card line">
+                            <a href={`https://line.me/ti/p/${siteConfig.lineId}`} target="_blank" rel="noopener noreferrer" className="contact-info-card line">
                                 <div className="contact-card-icon">💬</div>
                                 <h3>LINE Official</h3>
-                                <p>@pghome</p>
+                                <p>{siteConfig.lineId}</p>
                                 <span className="contact-card-action">แอดไลน์</span>
                             </a>
-                            <a href="mailto:pghome.ceo@gmail.com" className="contact-info-card">
+                            <a href={`mailto:${siteConfig.email}`} className="contact-info-card">
                                 <div className="contact-card-icon">📧</div>
                                 <h3>อีเมล</h3>
-                                <p>pghome.ceo@gmail.com</p>
+                                <p>{siteConfig.email}</p>
                                 <span className="contact-card-action">ส่งอีเมล</span>
                             </a>
-                            <a href="https://www.facebook.com/pghome" target="_blank" rel="noopener noreferrer" className="contact-info-card facebook">
+                            <a href={siteConfig.facebookUrl} target="_blank" rel="noopener noreferrer" className="contact-info-card facebook">
                                 <div className="contact-card-icon">📘</div>
                                 <h3>Facebook</h3>
-                                <p>PG HOME</p>
+                                <p>{siteConfig.companyName}</p>
                                 <span className="contact-card-action">ติดตาม</span>
                             </a>
                         </div>
@@ -118,8 +118,8 @@ export default function ContactPage() {
                                         <div className="address-item">
                                             <span className="icon">📍</span>
                                             <div>
-                                                <strong>บริษัท พีจีโฮม จำกัด</strong>
-                                                <p>เลขที่ 518 ตำบลเจดีย์หัก อำเภอเมือง จังหวัดราชบุรี 70000</p>
+                                                <strong>{siteConfig.companyFullName}</strong>
+                                                <p>{siteConfig.address}</p>
                                             </div>
                                         </div>
                                         <div className="address-item">
@@ -155,8 +155,8 @@ export default function ContactPage() {
                         <h2>ต้องการคำปรึกษาด่วน?</h2>
                         <p>โทรหาเราได้เลย พร้อมให้บริการทุกวัน</p>
                         <div className="cta-buttons">
-                            <a href="tel:092-270-2120" className="cta-btn primary">
-                                โทร 092-270-2120
+                            <a href={`tel:${siteConfig.phone}`} className="cta-btn primary">
+                                โทร {siteConfig.phone}
                             </a>
                         </div>
                     </div>

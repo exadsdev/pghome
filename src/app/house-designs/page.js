@@ -190,11 +190,11 @@ export default function HouseDesignsPage() {
                         <h2>พร้อมเริ่มต้นสร้างบ้านในฝัน?</h2>
                         <p>ติดต่อเราวันนี้ รับคำปรึกษาฟรี พร้อมประเมินราคาเบื้องต้น</p>
                         <div className="cta-buttons">
-                            <a href="tel:092-270-2120" className="cta-btn primary">
-                                โทร 092-270-2120
+                            <a href={`tel:${siteConfig.phone}`} className="cta-btn primary">
+                                โทร {siteConfig.phone}
                             </a>
-                            <a href="https://line.me/ti/p/@pghome" target="_blank" rel="noopener noreferrer" className="cta-btn outline">
-                                แอดไลน์ @pghome
+                            <a href={`https://line.me/ti/p/${siteConfig.lineId}`} target="_blank" rel="noopener noreferrer" className="cta-btn outline">
+                                แอดไลน์ {siteConfig.lineId}
                             </a>
                         </div>
                     </div>

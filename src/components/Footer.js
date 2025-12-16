@@ -54,6 +54,8 @@ export default function Footer() {
                             <li><Link href="/contact">ติดต่อเรา</Link></li>
                             <li><Link href="/faq">คำถามที่พบบ่อย</Link></li>
                             <li><Link href="/privacy">นโยบายความเป็นส่วนตัว</Link></li>
+                            <li><Link href="/terms">ข้อกำหนดและเงื่อนไข</Link></li>
+                            <li><Link href="/cookies">ประกาศการใช้คุกกี้</Link></li>
                         </ul>
                     </div>
                     <div className="footer-contact">
